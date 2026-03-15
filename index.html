@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Amazon Logo" class="logo-img">
+                </div>
+                <div class="location">
+                    <img src="images/location-icon.svg" alt="Location" class="location-icon-img">
+                    <div class="location-text">
+                        <span class="location-label">Deliver to</span>
+                        <span class="location-country">India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <select class="search-category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home</option>
+                    <option value="beauty">Beauty</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Search Amazon" class="search-input">
+                <button class="search-button">
+                    <img src="images/search-icon.svg" alt="Search" class="search-icon-img">
+                </button>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-item">
+                    <span class="nav-label">Hello, Sign in</span>
+                    <span class="nav-title">Account & Lists</span>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-label">Returns</span>
+                    <span class="nav-title">& Orders</span>
+                </div>
+                <div class="nav-cart">
+                    <div class="cart-icon">
+                        <img src="images/cart-icon.svg" alt="Cart" class="cart-icon-img">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    <span class="cart-label">Cart</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-nav">
+        <div class="nav-links">
+            <a href="#" class="nav-link">All</a>
+            <a href="#" class="nav-link">Today's Deals</a>
+            <a href="#" class="nav-link">Customer Service</a>
+            <a href="#" class="nav-link">Registry</a>
+            <a href="#" class="nav-link">Gift Cards</a>
+            <a href="#" class="nav-link">Sell</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/hero-background.svg');">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Discover amazing deals</h1>
+                <p class="hero-subtitle">Shop millions of products at unbeatable prices</p>
+                <button class="hero-button">Shop Now</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="main-content">
+        <div class="product-grid">
+            <!-- Electronics Category -->
+            <div class="product-card">
+                <h3 class="card-title">Electronics</h3>
+                <div class="card-image-grid">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Headphones" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=300&fit=crop" alt="Watch" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?w=400&h=300&fit=crop" alt="Camera" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1625842265805-7dbf67c3c991?w=400&h=300&fit=crop" alt="Keyboard" class="grid-img">
+                </div>
+                <a href="#" class="card-link">See more</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Fashion Category -->
+            <div class="product-card">
+                <h3 class="card-title">Fashion Trends</h3>
+                <div class="card-image-grid">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=300&fit=crop" alt="Clothing" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=300&fit=crop" alt="Sneakers" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400&h=300&fit=crop" alt="Accessories" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=300&fit=crop" alt="Bags" class="grid-img">
+                </div>
+                <a href="#" class="card-link">Explore now</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Home Decor Category -->
+            <div class="product-card">
+                <h3 class="card-title">Home Decor</h3>
+                <div class="card-image-grid">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" alt="Plants" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=400&h=300&fit=crop" alt="Furniture" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&h=300&fit=crop" alt="Lighting" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=300&fit=crop" alt="Decor" class="grid-img">
+                </div>
+                <a href="#" class="card-link">Shop collection</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Beauty Category -->
+            <div class="product-card">
+                <h3 class="card-title">Beauty & Personal Care</h3>
+                <div class="card-image-grid">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop" alt="Skincare" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=400&h=300&fit=crop" alt="Makeup" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=300&fit=crop" alt="Perfume" class="grid-img">
+                    <img src="https://images.unsplash.com/photo-1556228852-80eb8a7d0a4a?w=400&h=300&fit=crop" alt="Haircare" class="grid-img">
+                </div>
+                <a href="#" class="card-link">Discover more</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Gaming Category -->
+            <div class="product-card">
+                <h3 class="card-title">Gaming</h3>
+                <div class="card-image-single">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&h=600&fit=crop" alt="Gaming Setup" class="single-img">
+                </div>
+                <a href="#" class="card-link">Level up</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Books Category -->
+            <div class="product-card">
+                <h3 class="card-title">Books & Audible</h3>
+                <div class="card-image-single">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=600&fit=crop" alt="Books" class="single-img">
+                </div>
+                <a href="#" class="card-link">Start reading</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Fitness Category -->
+            <div class="product-card">
+                <h3 class="card-title">Health & Fitness</h3>
+                <div class="card-image-single">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop" alt="Fitness" class="single-img">
+                </div>
+                <a href="#" class="card-link">Get active</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Toys Category -->
+            <div class="product-card">
+                <h3 class="card-title">Toys & Games</h3>
+                <div class="card-image-single">
+                    <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=800&h=600&fit=crop" alt="Toys" class="single-img">
+                </div>
+                <a href="#" class="card-link">Play time</a>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner-section">
+            <img src="images/banner.svg" alt="Sale Banner" class="banner-image">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="back-to-top" id="backToTop">
+            Back to top
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amazon Clone. All rights reserved. Created for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
